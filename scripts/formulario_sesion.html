@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+ <TITLE>Iniciar sesion</TITLE>
+ <script Language="JavaScript">
+if(window.history.forward(1) != null) window.history.forward(1);
+</script>
+</HEAD>
+<BODY>
+       <center>
+       <form action="operacion_sesion.php" method="POST">
+         User_name:<br>
+         <input type="char" name="User_name" placeholder="User_name" value="" /> <br><br>
+         clave:<br>
+         <input type="password" name="clave" maxlength="4" placeholder="clave" value="" /> <br><br>
+         <input type="submit" value=" Aceptar" />
+         <input type="reset" value="Restablecer todo" />
+         <input type="button" value="Regresar" onclick=" location.href='http://localhost/scripts/menu.html' " >
+      </form>
+      </center>
+</BODY>
+</HTML>

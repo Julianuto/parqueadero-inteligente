@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+ <TITLE>Estado de puesto</TITLE>
+  <script Language="JavaScript">
+if(window.history.forward(1) != null) window.history.forward(1);
+</script>
+</HEAD>
+<BODY>
+    <center>
+    <form>  <?php
+     include("conectar.php");  ?>
+          <td valign="top" align=center>
+           <?php echo $ID_PUESTO; ?>
+         </td>
+    </form>
+     <form action="operacion_reg.php" method="POST">
+         <br><br> <br>
+         <select style="width:130px" style="font-size:14pt" name="id_Hab">
+         <option value="1">Habilitar</option>
+         <option value="2">Deshabilitar</option>
+         </select>
+         <br>
+         <br>
+         <select style="width:130px" style="font-size:14pt" name="ID_PUESTO">
+         <option value="1">Puesto 1</option>
+         <option value="2">Puesto 2</option>
+         <option value="3">Puesto 3</option>
+         </select>
+         <br>
+         <br>
+         <input type="submit" value=" Aceptar" />
+         <input type="button" value="Regresar" onclick=" location.href='http://localhost/scripts/menu_admin.html' " >
+      </form>
+      </center>
+
+
+</BODY>
+</HTML>

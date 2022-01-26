@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+ <TITLE>Registrar nuevo nombre parqueadero</TITLE>
+  <script Language="JavaScript">
+if(window.history.forward(1) != null) window.history.forward(1);
+</script>
+</HEAD>
+<BODY>
+    <center>
+     <form action="operacion_nombrep.php" method="POST">
+         <br><br> <br>
+         <select style="width:130px" style="font-size:14pt" name="id_Hab">
+         <option value="1">Ingenierias</option>
+         <option value="2">Salud</option>
+         </select>
+         <br>
+         <br>
+         <input type="inputText" value="Nombre" />
+         <br>
+         <br>
+         <input type="submit" value=" Aceptar" />
+         <input type="button" value="Regresar" onclick=" location.href='http://localhost/scripts/menu_admin.html' " >
+      </form>
+      </center>
+
+
+</BODY>
+</HTML>
